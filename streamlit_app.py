@@ -70,7 +70,7 @@ except URLError as e:
   
   
 # dont run anything past here while we troubleshott
-streamlit.stop()
+#--streamlit.stop()
 #-- my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #-- my_cur = my_cnx.cursor()
 #-- my_cur.execute("SELECT * from fruit_load_list")
@@ -94,4 +94,4 @@ if streamlit.button('Get Fruit Load List'):
 add_my_fruit = streamlit.text_input('what food would you like information about?','jackfruit')
 streamlit.write('Thanks for adding', add_my_fruit)
 
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
